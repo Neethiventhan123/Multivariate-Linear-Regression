@@ -20,7 +20,8 @@ create the linear regresssion model and fit
 ### Step5
 print the predicted output
 
-developed by:N.neethiventhan 
+developed by:N.neethiventhan
+
 reference number:23006643
 
 ## Program:
