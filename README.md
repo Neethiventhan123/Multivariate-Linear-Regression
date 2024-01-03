@@ -25,28 +25,23 @@ developed by:N.neethiventhan
 reference number:23006643
 
 ## Program:
-```
-from sklearn.linear_model import LinearRegression
-import numpy as np
-
-X = np.array([[1, 2], [2, 3], [3, 4]])
-y = np.array([3, 5, 7])
-
-model = LinearRegression()
-model.fit(X, y)
-
-new_data = np.array([[4, 5]])
-predicted_output = model.predict(new_data)
-
-print(f'Predicted Output: {predicted_output}')
+```python
+#Developed by:N.Neethiventhan
+#Reg no:23006643
+import pandas as pd
+from sklearn import linear_model
+df=pd.read_csv("cars (1).csv")
+a=df[['Weight','Volume']]
+b=df[['CO2']]
+regr=linear_model.LinearRegression()
+regr.fit(a,b)
+print("Coefficient:",regr.coef_)
+print("Intercept:",regr.intercept_)
+print("Amount:",regr.predict([[3300,1300]]))
 
 ```
 ## Output:
-Output: [9.]
-
-### Insert your output
-![image](https://github.com/Neethiventhan123/Multivariate-Linear-Regression/assets/148514848/30b4343c-70db-4c9d-8cbc-ce722681d56c)
-
+![image](https://github.com/Neethiventhan123/Multivariate-Linear-Regression/assets/148514848/1cac2b34-33f0-4031-b6d4-500549f496b5)
 
 ## Result
 Thus the multivariate linear regression is implemented and predicted the output using python program.
